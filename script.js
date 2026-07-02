@@ -916,7 +916,7 @@ function atualizarEstatisticasJogo() {
             </div>
         </div>
     `;
-    lucide.createIcons();
+    //lucide.createIcons();
 }
 
 

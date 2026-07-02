@@ -34,7 +34,7 @@
             <img src="logo.png" alt="BeachPro" class="h-12 object-contain">
         </div>
         
-        <div id="header-actions" class="hidden flex flex-wrap items-center justify-center gap-2 w-full sm:w-auto">
+        <div id="header-actions" class="hidden flex flex-wrap items-center justify-center gap-2 w-full sm:w-auto mt-2 sm:mt-0">
             <button onclick="window.print()" class="flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-4 py-2 rounded-xl text-xs font-semibold shadow-lg shadow-cyan-500/10 transition-all active:scale-95">
                 Exportar Relatório / PDF
             </button>
@@ -361,9 +361,11 @@
                 </div>
             </div>
 
-            <div id="s6-render" class="space-y-4">
-                <div class="py-8 text-center bg-zinc-900/50 border border-dashed border-zinc-800 rounded-xl">
-                    <p class="text-xs text-zinc-400">Selecione o <strong class="text-white">Jogo *</strong> para renderizar a linha do tempo ponto a ponto.</p>
+            <div class="w-full overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent"></div>
+                <div id="s6-render" class="space-y-4">
+                    <div class="py-8 text-center bg-zinc-900/50 border border-dashed border-zinc-800 rounded-xl">
+                        <p class="text-xs text-zinc-400">Selecione o <strong class="text-white">Jogo *</strong> para ver a linha do tempo ponto a ponto.</p>
+                    </div>
                 </div>
             </div>
         </section>
