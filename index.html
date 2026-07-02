@@ -23,20 +23,19 @@
             });
         }
     </script>
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
+
 <body class="min-h-screen text-gray-100 flex flex-col relative bg-black selection:bg-[#D8F22A] selection:text-black">
 
-    <!-- HEADER PRINCIPAL -->
+    <!-- CABEÇALHO PRINCIPAL -->
    <header class="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-md px-6 py-4 flex items-center justify-between sticky top-0 z-40 no-print">
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 w-full sm:w-auto justify-center sm:justify-start">
             <img src="logo.png" alt="BeachPro" class="h-12 object-contain">
         </div>
         
-        <div id="header-actions" class="hidden flex items-center gap-3">
+        <div id="header-actions" class="hidden flex flex-wrap items-center justify-center gap-2 w-full sm:w-auto">
             <button onclick="window.print()" class="flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-4 py-2 rounded-xl text-xs font-semibold shadow-lg shadow-cyan-500/10 transition-all active:scale-95">
-                <i data-lucide="printer" class="w-4 h-4"></i>
                 Exportar Relatório / PDF
             </button>
             <button onclick="voltarParaUpload()" class="bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white px-4 py-2 rounded-xl text-xs font-medium border border-zinc-800 transition-all">
@@ -61,7 +60,6 @@
             <!-- Zona de Drop/Upload Única -->
             <div id="dropzone" class="bg-black border-2 border-dashed border-zinc-850 hover:border-[#E95F32]/50 rounded-2xl p-12 flex flex-col justify-center items-center text-center transition-all group relative overflow-hidden cursor-pointer shadow-2xl">
                 <div class="bg-zinc-900 p-5 rounded-full mb-5 text-zinc-400 group-hover:text-[#E95F32] transition-colors">
-                    <i data-lucide="file-spreadsheet" class="w-12 h-10"></i>
                 </div>
                 <p class="text-xs text-zinc-400 max-w-xs mb-8 leading-relaxed">
                     Selecione ou arraste o arquivo de dados para obter as estatísticas do seu jogo
@@ -81,7 +79,6 @@
         <div class="bg-zinc-950 p-4 rounded-xl border border-zinc-800 flex flex-col sm:flex-row gap-4 items-center justify-between no-print">
             <div class="flex items-center gap-3">
                 <div class="p-2 bg-zinc-900 rounded-lg border border-zinc-800">
-                    <i data-lucide="file-spreadsheet" class="w-5 h-5 text-[#D8F22A]"></i>
                 </div>
                 <div>
                     <h3 class="text-xs font-bold text-white">Planilha de Análise Ativa</h3>
@@ -228,7 +225,6 @@
                     </select>
                 </div>
                 <div class="flex items-center text-xs text-zinc-500 pt-4 sm:pt-6">
-                    <i data-lucide="info" class="w-4 h-4 text-[#D8F22A] mr-2 shrink-0"></i>
                     <span>O sistema analisará automaticamente as duas duplas em court na partida escolhida.</span>
                 </div>
             </div>
@@ -350,7 +346,7 @@
                     </div>
                 </div>
                 <span class="text-[9px] bg-amber-500/10 text-amber-400 px-2.5 py-0.5 rounded border border-amber-500/20 uppercase font-bold tracking-wider">Histórico</span>
-            </div>
+            </div>lucid
 
             <!-- Filtros Seção 6 -->
             <div class="bg-zinc-900 p-4 rounded-xl border border-zinc-800 grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 no-print">
@@ -361,7 +357,6 @@
                     </select>
                 </div>
                 <div class="flex items-center text-xs text-zinc-500 pt-4 sm:pt-6">
-                    <i data-lucide="info" class="w-4 h-4 text-[#D8F22A] mr-2 shrink-0"></i>
                     <span>Cada barra representa um ponto. Clique na barra para abrir a ficha técnica detalhada.</span>
                 </div>
             </div>
