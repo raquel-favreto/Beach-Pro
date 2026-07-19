@@ -34,8 +34,8 @@
             <img src="logo.png" alt="BeachPro" class="h-12 object-contain">
         </div>
         
-        <div id="header-actions" class="hidden flex flex-wrap items-center justify-center gap-2 w-full sm:w-auto mt-2 sm:mt-0">
-            <button onclick="window.print()" class="flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-4 py-2 rounded-xl text-xs font-semibold shadow-lg shadow-cyan-500/10 transition-all active:scale-95">
+        <div id="header-actions" class="hidden flex flex-wrap items-center justify-center gap-2 w-full no-print sm:w-auto mt-2 sm:mt-0">
+            <button onclick="window.print()" class="flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 no-print hover:from-cyan-600 hover:to-blue-700 text-white px-4 py-2 rounded-xl text-xs font-semibold shadow-lg shadow-cyan-500/10 transition-all active:scale-95">
                 Exportar Relatório / PDF
             </button>
             <button onclick="voltarParaUpload()" class="bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white px-4 py-2 rounded-xl text-xs font-medium border border-zinc-800 transition-all">
@@ -333,7 +333,7 @@
         <!-- -------------------------------------------------------------------------------------- -->
         <!-- SEÇÃO 7: SEQUÊNCIA DE JOGO (Linha do Tempo Completa) -->
         <!-- -------------------------------------------------------------------------------------- -->
-        <section id="sec-sequencia" class="bg-zinc-950 border border-zinc-800 rounded-2xl p-6 print-section relative overflow-hidden">
+        <section id="sec-sequencia" class="bg-zinc-950 border border-zinc-800 rounded-2xl p-6 print-section relative overflow-hidden no-print">
             <div class="absolute right-0 top-0 text-[100px] font-black text-white/[0.01] select-none pointer-events-none uppercase tracking-tighter">
                 Sequência
             </div>
