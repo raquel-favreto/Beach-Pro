@@ -1658,6 +1658,10 @@
     background-color: #ffffff !important;
     color: #000000 !important;
   }
+  div, section, article, main, p, span, h1, h2, h3, h4, table, tr, td {
+    background-color: transparent !important;
+    color: #000000 !important;
+  }
   .no-print {
     display: none !important;
   }
@@ -1671,7 +1675,7 @@
     break-inside: avoid !important;
     margin-top: 20px !important;
     padding-top: 15px !important;
-    border: 1px solid #27272a !important;
+    border: 1px solid #dddddd !important;
     background-color: #ffffff !important;
   }
 }
