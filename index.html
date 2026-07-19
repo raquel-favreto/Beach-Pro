@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeachPro - Evolua seu jogo</title>
-    <!-- Tailwind CSS -->
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#000000">
@@ -32,15 +31,6 @@
    <header class="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-md px-6 py-4 flex items-center justify-between sticky top-0 z-40 no-print">
         <div class="flex items-center gap-3 w-full sm:w-auto justify-center sm:justify-start">
             <img src="logo.png" alt="BeachPro" class="h-12 object-contain">
-        </div>
-        
-        <div id="header-actions" class="hidden flex flex-wrap items-center justify-center gap-2 w-full no-print sm:w-auto mt-2 sm:mt-0">
-            <button onclick="window.print()" class="flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 no-print hover:from-cyan-600 hover:to-blue-700 text-white px-4 py-2 rounded-xl text-xs font-semibold shadow-lg shadow-cyan-500/10 transition-all active:scale-95">
-                Exportar Relatório / PDF
-            </button>
-            <button onclick="voltarParaUpload()" class="bg-zinc-900 hover:bg-zinc-800 text-zinc-300 hover:text-white px-4 py-2 rounded-xl text-xs font-medium border border-zinc-800 transition-all">
-                Incluir novos dados
-            </button>
         </div>
     </header>
 
@@ -75,7 +65,7 @@
     <!-- PÁGINA 2: DASHBOARD -->
     <div id="pagina-dashboard" class="hidden px-4 sm:px-8 py-8 max-w-7xl mx-auto space-y-12">
         
-        <!-- Banner de Ficheiro Ativo -->
+        <!-- Banner de Arquivo Ativo -->
         <div class="bg-zinc-950 p-4 rounded-xl border border-zinc-800 flex flex-col sm:flex-row gap-4 items-center justify-between no-print">
             <div class="flex items-center gap-3">
                 <div class="p-2 bg-zinc-900 rounded-lg border border-zinc-800">
@@ -95,9 +85,6 @@
         <!-- SEÇÃO 1: ESTATÍSTICAS GERAIS -->
         <!-- -------------------------------------------------------------------------------------- -->
         <section id="sec-geral" class="bg-zinc-950 border border-zinc-800 rounded-2xl p-6 print-section relative overflow-hidden">
-            <div class="absolute right-0 top-0 text-[100px] font-black text-white/[0.01] select-none pointer-events-none uppercase tracking-tighter">
-                Geral
-            </div>
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-zinc-800 pb-4 mb-6">
                 <div class="flex items-center gap-3">
                     <span class="text-lg font-black c">01.</span>
@@ -106,7 +93,6 @@
                         <p class="text-[10px] text-zinc-400">Visão geral do seu desempenho</p>
                     </div>
                 </div>
-                <span class="text-[9px] bg-[#D8F22A]/10 text-[#D8F22A] px-2.5 py-0.5 rounded border border-[#D8F22A]/20 uppercase font-bold tracking-wider">Visão Macro</span>
             </div>
 
             <!-- Filtros Seção 1 -->
@@ -155,9 +141,6 @@
         <!-- SEÇÃO 2: ESTATÍSTICAS DA DUPLA -->
         <!-- -------------------------------------------------------------------------------------- -->
         <section id="sec-dupla" class="bg-zinc-950 border border-zinc-800 rounded-2xl p-6 print-section relative overflow-hidden">
-            <div class="absolute right-0 top-0 text-[100px] font-black text-white/[0.01] select-none pointer-events-none uppercase tracking-tighter">
-                Dupla
-            </div>
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-zinc-800 pb-4 mb-6">
                 <div class="flex items-center gap-3">
                     <span class="text-lg font-black text-[#D8F22A]">02.</span>
@@ -166,7 +149,6 @@
                         <p class="text-[10px] text-zinc-400">Distribuição de pontos por winners, erros e análises de rally</p>
                     </div>
                 </div>
-                <span class="text-[9px] bg-cyan-500/10 text-cyan-400 px-2.5 py-0.5 rounded border border-cyan-500/20 uppercase font-bold tracking-wider">Aproveitamento Tático</span>
             </div>
 
             <!-- Filtros Seção 2 -->
@@ -202,9 +184,6 @@
         <!-- SEÇÃO 3: ESTATÍSTICAS DO JOGO -->
         <!-- -------------------------------------------------------------------------------------- -->
         <section id="sec-jogo" class="bg-zinc-950 border border-zinc-800 rounded-2xl p-6 print-section relative overflow-hidden">
-            <div class="absolute right-0 top-0 text-[100px] font-black text-white/[0.01] select-none pointer-events-none uppercase tracking-tighter">
-                Versus
-            </div>
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-zinc-800 pb-4 mb-6">
                 <div class="flex items-center gap-3">
                     <span class="text-lg font-black text-[#D8F22A]">03.</span>
@@ -213,7 +192,6 @@
                         <p class="text-[10px] text-zinc-400">Comparativo bilateral borboleta de desempenho por partida</p>
                     </div>
                 </div>
-                <span class="text-[9px] bg-emerald-500/10 text-emerald-400 px-2.5 py-0.5 rounded border border-emerald-500/20 uppercase font-bold tracking-wider">Bilateral</span>
             </div>
 
             <!-- Filtros Seção 3 -->
@@ -240,9 +218,6 @@
         <!-- SEÇÃO 4 & 5: ESTATÍSTICA INDIVIDUAL -->
         <!-- -------------------------------------------------------------------------------------- -->
         <section id="sec-individual" class="bg-zinc-950 border border-zinc-800 rounded-2xl p-6 print-section relative overflow-hidden">
-            <div class="absolute right-0 top-0 text-[100px] font-black text-white/[0.01] select-none pointer-events-none uppercase tracking-tighter">
-                Atleta
-            </div>
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-zinc-800 pb-4 mb-6">
                 <div class="flex items-center gap-3">
                     <span class="text-lg font-black text-[#D8F22A]">04.</span>
@@ -251,7 +226,6 @@
                         <p class="text-[10px] text-zinc-400">Desempenho no saque, erros forçados e aproveitamento de golpes</p>
                     </div>
                 </div>
-                <span class="text-[9px] bg-purple-500/10 text-purple-400 px-2.5 py-0.5 rounded border border-purple-500/20 uppercase font-bold tracking-wider">Individual</span>
             </div>
 
             <!-- Filtros Seção 4 -->
@@ -287,9 +261,6 @@
         <!-- SEÇÃO 6: ESTATÍSTICAS DE PONTOS IMPORTANTES -->
         <!-- -------------------------------------------------------------------------------------- -->
         <section id="sec-pressao" class="bg-zinc-950 border border-zinc-800 rounded-2xl p-6 print-section relative overflow-hidden">
-            <div class="absolute right-0 top-0 text-[100px] font-black text-white/[0.01] select-none pointer-events-none uppercase tracking-tighter">
-                Pressão
-            </div>
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-zinc-800 pb-4 mb-6">
                 <div class="flex items-center gap-3">
                     <span class="text-lg font-black text-[#D8F22A]">05.</span>
@@ -298,7 +269,6 @@
                         <p class="text-[10px] text-zinc-400">Comportamento sob pressão (30x30, 40x40, Breakpoints, Matchpoints e Viradas)</p>
                     </div>
                 </div>
-                <span class="text-[9px] bg-rose-500/10 text-rose-400 px-2.5 py-0.5 rounded border border-rose-500/20 uppercase font-bold tracking-wider">Pontos Críticos</span>
             </div>
 
             <!-- Filtros Seção 5 -->
@@ -334,9 +304,6 @@
         <!-- SEÇÃO 7: SEQUÊNCIA DE JOGO (Linha do Tempo Completa) -->
         <!-- -------------------------------------------------------------------------------------- -->
         <section id="sec-sequencia" class="bg-zinc-950 border border-zinc-800 rounded-2xl p-6 print-section relative overflow-hidden no-print">
-            <div class="absolute right-0 top-0 text-[100px] font-black text-white/[0.01] select-none pointer-events-none uppercase tracking-tighter">
-                Sequência
-            </div>
             <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-zinc-800 pb-4 mb-6">
                 <div class="flex items-center gap-3">
                     <span class="text-lg font-black text-[#D8F22A]">06.</span>
@@ -346,7 +313,7 @@
                     </div>
                 </div>
                 <span class="text-[9px] bg-amber-500/10 text-amber-400 px-2.5 py-0.5 rounded border border-amber-500/20 uppercase font-bold tracking-wider">Histórico</span>
-            </div>lucid
+            </div>
 
             <!-- Filtros Seção 6 -->
             <div class="bg-zinc-900 p-4 rounded-xl border border-zinc-800 grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6 no-print">
@@ -370,7 +337,7 @@
             </div>
         </section>
 
-        <!-- BOTÕES DO FINAL DA PÁGINA (Apenas visíveis na tela) -->
+        <!-- BOTÕES DO FINAL DA PÁGINA -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center py-10 border-t border-zinc-800 no-print">
             <button onclick="window.print()" class="bg-[#D8F22A] hover:bg-[#c2da23] text-black text-xs font-black py-4 px-10 rounded-xl transition-all shadow-lg active:scale-95">
                 Exportar Relatório PDF / Imprimir
