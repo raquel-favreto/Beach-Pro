@@ -1655,8 +1655,8 @@
     color-adjust: exact !important;
   }
   body {
-    background-color: #000000 !important;
-    color: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
   }
   .no-print {
     display: none !important;
@@ -1672,7 +1672,7 @@
     margin-top: 20px !important;
     padding-top: 15px !important;
     border: 1px solid #27272a !important;
-    background-color: #09090b !important;
+    background-color: #ffffff !important;
   }
 }
 @property --tw-translate-x {
