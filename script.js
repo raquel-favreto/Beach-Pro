@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setupDropzone();
 });
 
-// Configuração Drag and Drop do CSV
+// Configuração Drag and Drop do CSV - configura a área "arrastar e soltar" na tela
 function setupDropzone() {
     const dropzone = document.getElementById("dropzone");
     if (!dropzone) return;
@@ -35,6 +35,7 @@ function setupDropzone() {
     });
 }
 
+// Configuração o botão para incluir arquivos CSV - tradicional
 function handleFileSelect(event) {
     const file = event.target.files[0];
     if (file) {
@@ -42,6 +43,7 @@ function handleFileSelect(event) {
     }
 }
 
+//Lê o arquivo CSV enviado e coloca o nome do arquivo na tela para confirmar o envio
 function processarFicheiro(file) {
     const reader = new FileReader();
     document.getElementById("filename-display").textContent = file.name;
@@ -51,6 +53,9 @@ function processarFicheiro(file) {
         parseCSV(text);
     };
     reader.readAsText(file);
+    reader.onerror = function() {
+        console.error("Erro ao ler o arquivo:", reader.error);
+    };
 }
 
 function parseCSV(text) {
