@@ -53,6 +53,7 @@ function processarFicheiro(file) {
         parseCSV(text);
     };
     reader.readAsText(file);
+    
     reader.onerror = function() {
         console.error("Erro ao ler o arquivo:", reader.error);
     };
