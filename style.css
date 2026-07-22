@@ -1651,11 +1651,8 @@
 @media print {
   body {
     filter: invert(1) hue-rotate(180deg) !important;
-<<<<<<< HEAD
-=======
     background-color: #ffffff !important;
     color: #000000 !important;
->>>>>>> 1c0b89b (teste mensagem de erro)
   }
   svg, canvas, .apexcharts-canvas, div[class*="bg-"] {
     -webkit-print-color-adjust: exact !important;
